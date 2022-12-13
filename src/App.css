@@ -1,0 +1,132 @@
+.form{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+}
+
+.dark{
+    background-color: #2D3945;
+    color: white;
+}
+.form-container{
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.2) 0 0 7px 2px;
+    position: relative;
+}
+.dark .form-container{
+    background-color: #334450;
+}
+.step-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+}
+.btn-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-primary, .btn-secondary, .theme-btn, .submit-btn{
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+}
+.btn-primary, .btn-secondary, .submit-btn{
+    width: 50px;
+    height: 50px;
+    color: #334450;
+    box-shadow: rgba(0,0,0, 0.2) 0 0 7px 2px;
+
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #3e4e5e;
+    color: white;
+}
+.btn-primary:disabled, .submit-btn:disabled{
+    cursor: default;
+    background-color: #7a9dbb;
+}
+.btn-secondary{
+    background-color: #5e798f;
+    color: white;
+}
+.submit-btn{
+    width: 60px;
+    height: 60px;
+    background-color: #2D3945;
+    color: white;
+    font-size: 24px;
+}
+
+.theme-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #334450;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: white;
+}
+.theme-btn:hover{
+    opacity: 0.9;
+}
+.dark .theme-btn{
+    background-color: #dfdfdf;
+    color: #334450;
+}
+
+.form-container label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+
+.form-container form {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    outline: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 16px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dark input, .dark select{
+    background-color: #5e798f;
+    color: white;
+}
+
